@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,57 +8,89 @@
     <title>Portfolio (Week 2 Challenge)</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <h1>
             J. Lewis
-            <img class="avatar" src="https://www.seekpng.com/png/small/11-111573_batman-arkham-knight-png-transparent-picture-batman-arkham.png"></img>
+            <img class="avatar" src="https://wallpaperaccess.com/full/870524.jpg"></img>
         </h1>
-        <nav>
+        <div>
             <ul>
                 <li>
-                    About Me
+                    <a href="#about">About Me</a>
                 </li>
                 <li>
-                    Work
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    Contact Me
+                    <a href="#footer">Contact Me</a>
                 </li>
                 <li>
-                    Resume
+                    <a href="#https://outlook.live.com/mail/0/">Resume</a>
                 </li>
             </ul>
-        </nav>
-        <img class="back" src=https://img.freepik.com/free-vector/abstract-business-professional-background-banner-design-multipurpose_1340-16858.jpg></img>
+        </div>
     </header>
-    <main>
-        <div class="about">
-            <p>about me paragraph</p>
-        </div>
-        <div class="work">
-            <h3>Surf Report</h3>
+    <div class="design"></div>
+    <main class="content">
+        <section id="about" class="about">
+            <p>
+                This will be a paragraph about me.  It will discuss my work history, career goals, as well as personal hobbies and interests.
+                <br>
+                Module 2_Advanced CSS Week of 06/20/2022 Responsive Design 06/21/2022added the properties from column under.row
+                @media screen and (max-width: 726px) {
+                .row {
+                display: flex;
+                flex-direction: column;
+                mobile is min-width, desktop is max-width
+                LTL browser to test view on different devices:  https://www.lambdatest.com/lt-browser2 - Roadmap
+                Media queries
+                https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+            </p>
+        </section>
+        <section id="work" class="work">
+            <img src="https://cdn.pixabay.com/photo/2017/10/26/17/51/under-construction-2891888__480.jpg" alt="under construction image with hard hat"/>
+            <h2>Surf Report</h2>
             <p>MERN Stack</p>
-        </div>
+        </section>
         <div class="row">
             <div class="box">
-                <h3>LED Wall</h3>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/001/970/338/small/building-under-construction-site-free-vector.jpg" alt="coming soon - under construction image with cone and hard hat"/>
+                <h2>LED Wall</h2>
                 <p>Node/IoT</p>
             </div>
             <div class="box">
-                <h3>Calculator</h3>
+                <img src="https://previews.123rf.com/images/losswen/losswen1210/losswen121000006/16025924-website-under-construction-puzzle-concept.jpg" alt=" website under construction puzzle image"/>
+                <h2>Calculator</h2>
                 <p>React/JavaScript/CSS</p>
             </div>
             <div class="box">
-                <h3>Pastel Puzzels</h3>
+                <img src="https://previews.123rf.com/images/devke/devke1101/devke110100010/8602050-website-under-construction.jpg" alt ="website under construction sign image"/>
+                <h2>Pastel Puzzels</h2>
                 <p>MERN Stack</p>
             </div>
             <div class="box">
-                <h3>Run Buddy</h3>
+                <img src="https://www.kindpng.com/picc/m/135-1354013_our-website-is-under-construction-but-the-website.png" alt="website under construction road signs with cones"/>
+                <h2>Run Buddy</h2>
                 <p>HTML/CSS</p>
             </div>
         </div>
-        <footer class="contact">
+    </main>
+    <div>
+        <aside class="labels">
+            <section class="label-about">
+                <h1>About <br>Me</h1>
+            </section>
+            <section class="label-work">
+                <h1>Work</h1>
+            </section>
+            <section class="label-contact">
+                <h1>Contact <br>Me</h1>
+            </section>
+        </aside>
+    </div>
+        <footer id="footer" class="footer">
             <ul>
                 <li>
                     <a href="https://outlook.live.com/mail/0/">800.555.1212</a>
