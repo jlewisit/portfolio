@@ -13,7 +13,7 @@
     <header class="header">
         <h1>
             J. Lewis
-            <img class="avatar" src="https://wallpaperaccess.com/full/870524.jpg"></img>
+            <img class="avatar" src="https://wallpaperaccess.com/full/870524.jpg" alt="batman shadow avatar"/>
         </h1>
         <div>
             <ul>
@@ -32,7 +32,10 @@
             </ul>
         </div>
     </header>
-    <div class="design"></div>
+    <div class="design-container">
+        <img class="design" src="https://img.freepik.com/free-vector/abstract-business-professional-background-banner-design-multipurpose_1340-16858.jpg" alt="professional blue angles render design"/>
+        <h2 class="bottom-right">Cool subtitle here!</h2>
+    </div>
     <main class="content">
         <section id="about" class="about">
             <p>
@@ -49,31 +52,26 @@
                 https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
             </p>
         </section>
-        <section id="work" class="work">
-            <img src="https://cdn.pixabay.com/photo/2017/10/26/17/51/under-construction-2891888__480.jpg" alt="under construction image with hard hat"/>
-            <h2>Surf Report</h2>
-            <p>MERN Stack</p>
-        </section>
+        <div id="work" class="work-container">
+            <img class="work" src="https://cdn.pixabay.com/photo/2017/10/26/17/51/under-construction-2891888__480.jpg" alt="under construction image with hard hat"/>
+            <h2 class="bottom-left">Surf Report<br>MERN Stack</h2>
+        </div>
         <div class="row">
-            <div class="box">
+            <div class="box box-container">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/001/970/338/small/building-under-construction-site-free-vector.jpg" alt="coming soon - under construction image with cone and hard hat"/>
-                <h2>LED Wall</h2>
-                <p>Node/IoT</p>
+                <h2 class="bottom-left">LED Wall<br>Node/IoT</h2>
             </div>
-            <div class="box">
+            <div class="box box-container">
                 <img src="https://previews.123rf.com/images/losswen/losswen1210/losswen121000006/16025924-website-under-construction-puzzle-concept.jpg" alt=" website under construction puzzle image"/>
-                <h2>Calculator</h2>
-                <p>React/JavaScript/CSS</p>
+                <h2 class="bottom-left">Calculator<br>React/JavaScript/CSS</h2>
             </div>
-            <div class="box">
+            <div class="box box-container">
                 <img src="https://previews.123rf.com/images/devke/devke1101/devke110100010/8602050-website-under-construction.jpg" alt ="website under construction sign image"/>
-                <h2>Pastel Puzzels</h2>
-                <p>MERN Stack</p>
-            </div>
-            <div class="box">
+                <h2 class="bottom-left">Pastel Puzzels<br>MERN Stack</h2>
+              </div>
+            <div class="box box-container">
                 <img src="https://www.kindpng.com/picc/m/135-1354013_our-website-is-under-construction-but-the-website.png" alt="website under construction road signs with cones"/>
-                <h2>Run Buddy</h2>
-                <p>HTML/CSS</p>
+                <h2 class="bottom-left">Run Buddy<br>HTML/CSS</h2>
             </div>
         </div>
     </main>
@@ -90,7 +88,8 @@
             </section>
         </aside>
     </div>
-        <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
+        <div>
             <ul>
                 <li>
                     <a href="https://outlook.live.com/mail/0/">800.555.1212</a>
@@ -102,7 +101,7 @@
                     <a href="https://github.com/">GitHub</a>
                 </li>
             </ul>
-        </footer>
-    </main>
+        </div>
+    </footer>
 </body>
 </html>
