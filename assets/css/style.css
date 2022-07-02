@@ -15,7 +15,8 @@ body {
 }
 
 .header {
-    padding: 20px;
+    height: 180px;
+    padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     background-color: firebrick;
     color: navy
@@ -23,12 +24,15 @@ body {
 
 .header h1 {
     display: inline-block;
+    top: 20px;
+    margin-left: 30px;
     font-size: 3em;
 }
 
 .header div {
-    padding-top: 15px;
+    /* padding-top: 15px; */
     margin-right: 20px;
+    margin-top: 45px;
     float: right;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -37,6 +41,8 @@ body {
 .header div ul li {
     display: inline-block;
     margin: 25px;
+    margin-right: 90px;
+    font-size: 1.2em;
 }
 
 a {
@@ -61,9 +67,51 @@ a {
 
 /* Design image class */
 .design {
-    height: 300px;
+    height: 270px;
     width: 100%;
     margin-bottom: 25px;
+}
+
+/* Added display to try for more responsive design */
+.about-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid #d9dcd6
+}
+
+div.about-box1 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 150px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+    text-align: right;
+    color: navy;
+  }
+  
+  div.about-box2 {
+    box-sizing: border-box;
+    width: 75%;
+    height: 150px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+  }
+
+  p {
+    color:navy;
+    margin-bottom: 100px;
+}
+
+  /* Container holding the image and the text */
+  /* Added display to try for more responsive design */
+.work-container, .contact-container {
+    margin-top: 25px;
+    /* display: flex; */
+    position: relative;
+    text-align: left;
+    color: navy;
 }
 
 /* Bottom right text */
@@ -73,41 +121,6 @@ a {
     right: 16px;
     font-size: 3em;
 }
-  
-.content {
-    width: 75%;
-    /* display: inline-block; */
-    margin-right: 20px;
-    position: absolute;
-    right: 0;
-} 
-
-.about {
-    display: flex;
-    justify-content: flex-end;
-}
-
-p {
-    color:navy;
-    margin-bottom: 100px;
-}
-
-/* Container holding the image and the text */ 
-.work-container {
-    position: relative;
-    text-align: left;
-    color: navy;
-}
-
-.work {
-    margin: 10px;
-    border: 5px solid firebrick;
-    height: 600px;
-}
-
-.work img {
-    opacity: .2;
-}
 
 /* bottom left text */
 .bottom-left {
@@ -116,10 +129,68 @@ p {
     left: 16px;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div.work-box1 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 600px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+    text-align: right;
+    color: navy;
+  }
+  
+  div.work-box2 {
+    box-sizing: border-box;
+    width: 75%;
+    height: 600px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+  }
+
+  div.work-box3, div.work-box6, div.contact-box1 {
+    box-sizing: border-box;
+    width: 25%;
+    height: 300px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+    text-align: right;
+  }
+
+  div.work-box4, div.work-box5, div.work-box7, div.work-box8 {
+    box-sizing: border-box;
+    width: 37.5%;
+    height: 300px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+  }
+
+  div.contact-box2 {
+    box-sizing: border-box;
+    width: 75%;
+    height: 300px;
+    border: 5px solid gray;
+    float: left;
+    padding: 20px;
+    /* display: inline; */
+    /* position: absolute; */
+    font-size: 25px;
+  }
+
+.work-box2 img, .work-box4 img, .work-box5 img, .work-box7 img, .work-box8 img {
+    opacity: .2;
+}
+
+.work-box2 img:hover, .work-box4 img:hover, .work-box5 img:hover, .work-box7 img:hover, .work-box8 img:hover {
+    opacity: 1;
 }
 
 @media screen and (max-width: 726px) {
@@ -130,144 +201,37 @@ p {
     }
 }
 
-/* Container holding the image and the text */
-.box-container {
-    position: relative;
-    text-align: left;
-    color: navy
-  }
-
-.box {
-    margin: 10px;
-    border: 5px solid firebrick;
-    height: 300px;
-    width: 48.5%;
-}
-
-.box img {
-    opacity: .2;
-}
-
-.box img:hover {
-    opacity: 1;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-}
-
-h2 h3 {
-    color: navy;
-}
-
-/* Everything below this point is for the left side of the page */
-.labels {
-    /* margin: 50px; */
-    width: 25%;
-    margin-left: 150px;
-    /* padding: 20px; */
-    clear: both;
-    float: left;
-    /* width: 20%; */
-    height: 100%;
-    display: column;
-    color: navy;
-
-    /* flex-wrap: wrap; */
-}
-
-/* main content label header styling */
-.label-about h1, .label-work h1, .label-contact h1 {
-    /* margin-bottom: 10px; */
-    text-align: right;
-    font-size: 3em;
-}
-
-.label-about {
-    position: absolute;
-    margin: 50px;
-    top: 460px;
-}
-
-.label-work {
-    position: absolute;
-    margin: 50px;
-    top: 675px;
-}
-
-.label-contact {
-    position: absolute;
-    margin: 50px;
-    bottom: 0;
-}
-
-.footer {
-    position: absolute;
-    margin: 50px;
-    bottom: 0;
-    height: 100px;
-    color: navy;
-    width: 75%;
-    right: 0;
-}
-
-.footer div ul li {
-    display: inline;
-    margin: 8px;
-    font-size: 25px;
-}
-
-/* div.asideElements:before {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    vertical-align: left;
-} */
-
-/* @media screen and (max-width: 726px) {
-    p {
-        display: flex-wrap;
+@media screen and (max-width: 726px) {
+    .about-container {
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-} */
-
-/* .float-left {
-    float: left;
-    margin-right: 25px;
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-} */
+@media screen and (max-width: 726px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
 
-/* .column {
-    display: flex;
-    flex-direction: column;
-} */
+@media screen and (max-width: 726px) {
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
 
-/* .grid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(12, 1fr);
-} */
-
-/* .box1 .box2 .box3 .box4 {
-    margin: 20px;
-    border: 3px solid firebrick;
-    width: 20%;
-    border-radius: 8px;
-} */
-
-/* ul li {
-    display: flex;
-    flex-direction: row;
-    color: navy;
-} */
-
-/* .back {
-    width: 100%;
-    height: 150px;
-} */
+/* Cards are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+    .about-container {
+      width: 50%;
+    } */
+  
+  /* Cards are stacked on top of each other at 768px or smaller
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%; */
