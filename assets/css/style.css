@@ -1,13 +1,10 @@
-/**** Joe Lewis' week 2 project ****/
+/* Full document settings */
 * {
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
-    /* padding: 0;
-    margin: 0; */
-    /* let height = screen.height; */
 }
 
-/* sets min-height and background-color for the entire page */
+/* Sets min-height and background-color for entire body */
 body {
     position: relative;
     background-color: #d9dcd6;
@@ -244,21 +241,21 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
 @media screen and (max-width: 726px) {
     div.about-box2 {
         height: 300px;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
    }
 }
 
 @media screen and (max-width: 726px) {
     div.about-box1 {
         height: 150px;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
    }
 }
 
@@ -267,20 +264,20 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
 @media screen and (max-width: 726px) {
     div.work-box1 {
         height: 150px;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
 @media screen and (max-width: 726px) {
     div.work-box2, div.work-box3, div.work-box4, div.work-box5, div.work-box6, div.work-box7, div.work-box8 {
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
@@ -289,13 +286,13 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
 @media screen and (max-width: 820px) {
     div.contact-box1 {
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
 
@@ -306,6 +303,6 @@ li {
         height: 200px;
         display: flex;
         flex-wrap: wrap;
-        border: 5px solid #d9dcd6
+        border: .1px solid #d9dcd6
     }
 }
