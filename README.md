@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/102529279/177059696-879581bb-e39d-4a98-9475-023295cdf294.png)
 # 02 Advanced CSS: Portfolio
 
 ## Your Task
