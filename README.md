@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/102529279/177059696-879581bb-e39d-4a98-9475-023295cdf294.png)
 
-I created this page from scratch. It is a portfolio page, which I will add to as the course progresses. It is intended to showcase my skills and talents to employers looking to fill a position.  
+I created this page from scratch. It is a portfolio page, which I will add to as the course progresses. It is intended to showcase my skills and talents to employers looking to fill a position.  Here is the link: https://jlewisit.github.io/portfolio/
 
 In this challenge I've set myself up for future success by applying the core skills I've recently learned: flexbox, media queries, and CSS variables. 
 
