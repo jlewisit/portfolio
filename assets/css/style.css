@@ -193,7 +193,7 @@ div.work-box4, div.work-box5, div.work-box7, div.work-box8 {
     opacity: 1;
 }
 
-  footer.contact-box1 {
+div.contact-box1 {
     margin-top: 25px;
     box-sizing: border-box;
     width: 25%;
@@ -205,7 +205,7 @@ div.work-box4, div.work-box5, div.work-box7, div.work-box8 {
     color: navy;
 }
 
-  footer.contact-box2 {
+div.contact-box2 {
     margin-top: 25px;
     box-sizing: border-box;
     width: 75%;
@@ -289,13 +289,13 @@ div.work-box4, div.work-box5, div.work-box7, div.work-box8 {
 }
 
 @media screen and (max-width: 820px) {
-    footer.contact-box1 {
+    div.contact-box1 {
         border: .1px solid #d9dcd6
     }
 }
 
 @media screen and (max-width: 820px) {
-    footer.contact-box2 {
+    div.contact-box2 {
         margin-top: 0px;
         padding: 0px;
         height: 200px;
